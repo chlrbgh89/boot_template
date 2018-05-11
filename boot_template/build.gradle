@@ -31,6 +31,10 @@ dependencies {
 	compile('javax.servlet:jstl')
     compile("org.apache.tomcat.embed:tomcat-embed-jasper")
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('mysql:mysql-connector-java')
+	compile group: 'com.zaxxer', name: 'HikariCP', version: '3.1.0'
+	
 	compileOnly('org.projectlombok:lombok')
 	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
