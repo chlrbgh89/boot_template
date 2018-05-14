@@ -18,8 +18,8 @@ public class HelloController {
 	}
 	
 	@GetMapping("/create")
-	public @ResponseBody String create() {
-		return helloService.createHello();
+	public @ResponseBody String create(Hello hello) {
+		return helloService.createHello(hello);
 	}
 	
 	@GetMapping("/all")

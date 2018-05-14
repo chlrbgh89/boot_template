@@ -35,6 +35,13 @@ dependencies {
     compile('mysql:mysql-connector-java')
 	compile group: 'com.zaxxer', name: 'HikariCP', version: '3.1.0'
 	
+	compile('org.springframework.boot:spring-boot-starter-cache')
+	compile('javax.cache:cache-api')
+	compile group: 'org.ehcache', name: 'ehcache', version: '3.5.2'
+	
+	compile("com.navercorp.lucy:lucy-xss:1.6.3")
+	compile group: 'com.navercorp.lucy', name: 'lucy-xss-servlet', version: '2.0.0'
+	
 	compileOnly('org.projectlombok:lombok')
 	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
